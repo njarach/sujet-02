@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!---------- METADATA ---------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Évaluation Front-end Finale</title>
+
+    <!---------- STYLES ---------->
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!----- VENDOR: RESET CSS ----->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!----- APP ----->
+    <link rel="stylesheet" href="./styles/dimensions.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./styles/lib.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!----- VENDOR: FONT AWESOME ----->
+        <script src="https://kit.fontawesome.com/a729e0b988.js" crossorigin="anonymous"></script>
+
+  </head>
+<!-- css body dans main.css avec les propriétés de background -->
+  <body>
+
+  <section class="container">
+
+    <!-- header flex horizontal -->
+
+    <header  class="collection--horizontal justify-content-between">
+
+      <!-- Navbar logo proposé par Bootstrap -->
+
+      <div class="navbar-image">
+        <img class="brand-logo image" src="/images/ui/brand-logo.png" alt="">
+      </div>
+
+      <!-- Navbar simple de boostrap modifiée pour acceuillir des éléments simples -->
+      
+      <div class="navbar-element collection--horizontal">
+        <nav class="navbar navbar-expand">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light text--strong" href="#">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light text--strong" href="#">Nos véhicules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light text--strong" href="#">Nos Concessions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+
+       
+    </header>
+    
+    <main>
+
+      <!-- Carousel Boostrap  -->
+        
+          <div id="carouselWf3Dealership" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/banner-slider/1.jpg" class="d-block w-100 carrousel-element" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/banner-slider/2.jpg" class="d-block w-100 carrousel-element" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/banner-slider/3.jpg" class="d-block w-100 carrousel-element" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWf3Dealership" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselWf3Dealership" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Conteneur de la totalité des éléments du catalogue, vertical, background color et padding -->
+
+      <div class="container-catalogue collection--vertical">
+
+          <!-- Un genre de titre, "Nos Véhicules", usage des librairies fournies  -->
+
+          <h2 class="p-2 mb-3 bg-light text--uppercase text--strong">Nos véhicules</h2>
+
+          <!-- Conteneur "carte" de véhicule -->
+        
+          <div class="vehicle-card d-flex bg-light my-2">
+          <img class="product-image" src="/images/products/1.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex flex-wrap justify-content-end">
+                <p class="mx-4 text--center text--strikethrough d-flex align-items-center">79 0000€</p>
+                <p class="mx-4 text--center text--sized-up-2 page-title d-flex align-items-center">55 000€</p>
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>
+        <!-- Conteneur "carte" de véhicule -->
+          <div class="vehicle-card d-flex bg-light my-2">
+            <img class="product-image" src="/images/products/2.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex justify-content-end">
+                <p class="mx-4 text--center text--sized-up-2 d-flex align-items-center">71 000€</p>
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>
+       <!-- Conteneur "carte" de véhicule -->        
+          <div class="vehicle-card d-flex bg-light my-2">
+            <img class="product-image" src="/images/products/3.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex justify-content-end">
+                <p class="mx-4 text--center text--sized-up-2 d-flex align-items-center">79 0000€</p>
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>
+        <!-- Conteneur "carte" de véhicule -->        
+          <div class="vehicle-card d-flex bg-light my-2">
+            <img class="product-image" src="/images/products/4.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex justify-content-end">
+                <p class="mx-4 text--center text--strikethrough d-flex align-items-center">88 000€</p>
+                <p class="mx-4 text--center text--sized-up-2 page-title d-flex align-items-center">70 000€</p>
+                
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>
+        <!-- Conteneur "carte" de véhicule -->        
+          <div class="vehicle-card d-flex bg-light my-2">
+            <img class="product-image" src="/images/products/5.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex justify-content-end">
+                <p class="mx-4 text--center text--sized-up-2 d-flex align-items-center">50 995€</p>
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>
+        <!-- Conteneur "carte" de véhicule -->        
+          <div class="vehicle-card d-flex bg-light my-2">
+            <img class="product-image" src="/images/products/6.jpg"   alt="">
+            <div class="collection--vertical justify-content-between ms-3 mt-3">
+                <h2 class="text--uppercase text--strong text--sized-up-2 font-awesome-example">Lorem ipsum dolor sit amet</h2>
+                <p class="mb-5 page-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo officia eligendi quo eos, quaerat adipisci cum dolorem iure corrupti voluptate, tempore suscipit, sed ducimus?</p>
+              <div class="infos-prix d-flex justify-content-end">
+                <p class="mx-4 text--center text--strikethrough d-flex align-items-center">90 000€</p>
+                <p class="mx-4 text--center text--sized-up-2 page-title d-flex align-items-center">77 999€</p>
+                <button class="btn text--strong text--uppercase text--sized-up-1"><i class="fa-solid fa-plus fa-xl"></i> Comparer</button>
+              </div>
+            </div>
+          </div>       
+      </div>
+
+    </main>
+
+    <footer>
+      <!-- conteneur du footer pour application de la couleur d'arrière plan -->
+      <div class="footer-container p-3 py-5 bg-light collection--horizontal justify-content-between align-items-center">
+      <!-- conteneur des icônes, awesomefonts -->
+        <div class="collection--horizontal">
+          <i class="fa-brands fa-facebook fa-xl mx-2 rights"></i>
+          <i class="fa-brands fa-instagram fa-xl mx-2 rights"></i>
+          <i class="fa-brands fa-twitter fa-xl mx-2 rights"></i>
+        </div>
+      <!-- conteneur des mentions générales -->
+        <div class="collection--horizontal text--underlined">
+          <p class="mx-2">Conditions de vente</p>
+          <p class="mx-2">FAQ</p>
+          <p class="mx-2">A propos</p>
+        </div>
+        <div class="rights text--sized-down-3 text--strong">
+          <p>2021 WF3 Dealership</p>
+        </div>
+      </div>
+    </footer>
+
+    <!---------- SCRIPTS ---------->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</section>
+
+</body>
+
+</html>

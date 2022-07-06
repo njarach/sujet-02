@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family:"Roboto" ;
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+.container-catalogue {
+    background-color: rgba(240,240,240,255);
+    padding: 1%;
+}
+
+.footer-container {
+    background-color: rgba(240,240,240,255);
+
+}
+
+.carrousel-element {
+    height: 60vh;
+    
+}
+
+.btn {
+    background-color: #d66a6a;
+    color: white;
+}
+
+.product-image {
+    height: 30vh;
+    max-width: 20vw;
+}
+
+.rights{
+    color: #d66a6a;
+}

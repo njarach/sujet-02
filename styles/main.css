@@ -1,0 +1,58 @@
+/* =========================================================================
+ * BASE
+ * ========================================================================= */
+
+/* HTML
+ * ------------------------------------------------------------------------- */
+
+html {
+  height: 100%;
+}
+
+/* BODY
+ * ------------------------------------------------------------------------- */
+
+body {
+  display: flex;
+
+  margin: 0;
+
+  min-width: var(--dom--min-width);
+  min-height: 100%;
+
+  flex-direction: column;
+
+  font-family: sans-serif;
+
+  background-image: url(/images/ui/background.jpg);
+    background-color: rgba(14,14,16,255);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-size: cover;
+    
+}
+
+/* =========================================================================
+ * MY CUSTOM STYLE
+ * ========================================================================= */
+
+.example-collection {
+  margin: auto;
+  align-items: center;
+}
+
+.example-collection > .collection__item:not(:first-child) {
+  margin-top: var(--offset--medium);
+}
+
+.brand-logo {
+  width: 128px;
+}
+
+.page-title {
+  color: var(--color--dark-grey);
+}
+
+.font-awesome-example {
+  color: var(--color--black);
+}
