@@ -24,7 +24,7 @@ body {
 
   font-family: sans-serif;
 
-  background-image: url(./images/ui/background.jpg);
+  background-image: url(../images/ui/background.jpg);
     background-color: rgba(14,14,16,255);
     background-repeat: no-repeat;
     background-size: 100% 90%;
