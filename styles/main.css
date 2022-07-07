@@ -9,6 +9,28 @@ html {
   height: 100%;
 }
 
+/* BODY
+ * ------------------------------------------------------------------------- */
+
+body {
+  display: flex;
+
+  margin: 0;
+
+  min-width: var(--dom--min-width);
+  min-height: 100%;
+
+  flex-direction: column;
+
+  font-family: sans-serif;
+
+  background-image: url(./images/ui/background.jpg);
+    background-color: rgba(14,14,16,255);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-size: cover;
+    
+}
 
 /* =========================================================================
  * MY CUSTOM STYLE
